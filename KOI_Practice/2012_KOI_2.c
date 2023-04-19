@@ -6,25 +6,25 @@ int main() {
 	int sum = 0;
 	int max = 0;
 	
-	//µµ½ÃÀÇ ¼ö ¹Þ¾Æ¿À±â
+	//ë„ì‹œì˜ ìˆ˜ ë°›ì•„ì˜¤ê¸°
 	scanf("%d", &count);
 	j = count;
 	
-	//µµ½ÃÀÇ ¼ö¸¸Å­ ¹è¿­ ÇÒ´ç ÈÄ °¢ µµ½Ãº° ±Ý¾× ¹Þ¾Æ¿À¸ç ÃÑ ÇÕ ±¸ÇÏ±â 
+	//ë„ì‹œì˜ ìˆ˜ë§Œí¼ ë°°ì—´ í• ë‹¹ í›„ ê° ë„ì‹œë³„ ê¸ˆì•¡ ë°›ì•„ì˜¤ë©° ì´ í•© êµ¬í•˜ê¸° 
 	int* citys = malloc(sizeof(int) * count);
 	for(i = 0; i < count; i++) {
 		scanf("%d", &citys[i]);
 		sum += citys[i];
 	}
 	
-	//ÃÑ ¿¹»ê ¹Þ¾Æ¿À±â 
+	//ì´ ì˜ˆì‚° ë°›ì•„ì˜¤ê¸° 
 	scanf("%d", &total);
 	
 	if(sum > total) {
-		//¿äÃ»ÇÑ ¿¹»êµéÀÇ Æò±Õ ±¸ÇÏ±â 
+		//ìš”ì²­í•œ ì˜ˆì‚°ë“¤ì˜ í‰ê·  êµ¬í•˜ê¸° 
 		ave = sum/count;
 		
-		//¿äÃ»ÇÑ ¿¡»êµéÀ» Æò±Õ °ª°ú ºñ±³. Æò±Õº¸´Ù ³·À¸¸é ÃÑ ¿¹»ê¿¡¼­ Á¦¿Ü, ÀÎ¿øµµ Á¦¿Ü 
+		//ìš”ì²­í•œ ì—ì‚°ë“¤ì„ í‰ê·  ê°’ê³¼ ë¹„êµ. í‰ê· ë³´ë‹¤ ë‚®ìœ¼ë©´ ì´ ì˜ˆì‚°ì—ì„œ ì œì™¸, ì¸ì›ë„ ì œì™¸ 
 		for(i = 0; i < count; i++) {
 			if(citys[i] < ave) {
 				total -= citys[i];

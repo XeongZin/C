@@ -9,16 +9,16 @@ int main() {
 	int ave;
 	int x=0;
 	
-	//��� ���귮 
+	//평균 생산량 
 	scanf("%d", &ave);
 	
-	//�ڵ� �й��� ��
+	//자동 분무기 수
 	scanf("%d", &count);
 	
-	//�й��� ���� ��ŭ �迭 
+	//분무기 갯수 만큼 배열 
 	int* spray = malloc(sizeof(int) * count);
 	
-	//������ ���� ���귮 �� ��¿� �迭 �ʱ�ȭ 
+	//농장의 최종 생산량 및 출력용 배열 초기화 
 	for(i=0;i<8;i++) {
 		for(j=0;j<8;j++) {
 			scanf("%d", &field[i][j]);
@@ -43,7 +43,7 @@ int main() {
 	}
 	
 	/*
-	//��� 
+	//출력 
 	for(i=0;i<8;i++) {
 		for(j=0;j<8;j++) {
 			printf("%c ", field_c[i][j]);
